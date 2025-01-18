@@ -8,3 +8,4 @@ SortIncludes: false
 SpaceAfterCStyleCast: true
 TabWidth: 4
 UseTab: Never
+AccessModifierOffset: -4

@@ -23,7 +23,10 @@ upload: compile
 	arduino-cli upload -p $(PORT) --fqbn $(BOARD) --input-dir build
 
 monitor:
-	  arduino-cli monitor -p $(PORT) -b $(BOARD) --config $(BAUD)
+	arduino-cli monitor -p $(PORT) -b $(BOARD) --config $(BAUD)
+
+install-libs:
+	arduino-cli lib install OneButton BlockNot
 
 clean:
 	rm -rf build
