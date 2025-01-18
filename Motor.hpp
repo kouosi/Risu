@@ -17,6 +17,7 @@ public:
     void drive(uint8_t speed, Direction dir, uint32_t delay);
     void brake();
     void setStandBy();
+    uint8_t getSpeed(Motor motor);
 
 private:
     uint8_t in1Pin, in2Pin, pwmPin, stbyPin, speed;
@@ -35,4 +36,3 @@ void turnLeft(Motor left, Motor right, int speed);
 void turnRight(Motor left, Motor right, int speed);
 
 void brake(Motor motor1, Motor motor2);
-void getInfo(Motor motor);
